@@ -2,12 +2,12 @@
   <servers>
       <server>
           <id>nx-releases</id>
-          <username>admin</username>
+          <username></username>
           <password></password>
       </server>
       <server>
           <id>nx-snapshots</id>
-          <username>admin</username>
+          <username></username>
           <password></password>
       </server>
   </servers>
