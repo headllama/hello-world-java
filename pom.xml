@@ -4,19 +4,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 			http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
- <distributionManagement>
-    <repository>
-        <id>nx-releases</id>
-        <name>Releases</name>
-        <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-        <id>nx-snapshots</id>
-        <name>Snapshot</name>
+    <repositories>
+      <repository>
+        <id>my-internal-site</id>
         <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-central/</url>
-    </snapshotRepository>
-</distributionManagement>
-
+      </repository>
+    </repositories>
 
     <modelVersion>4.0.0</modelVersion>
 
