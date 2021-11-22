@@ -1,12 +1,7 @@
 <settings>
   <servers>
       <server>
-          <id>nx-releases</id>
-          <username>teste</username>
-          <password>teste</password>
-      </server>
-      <server>
-          <id>nx-snapshots</id>
+          <id>maven-releases</id>
           <username>teste</username>
           <password>teste</password>
       </server>

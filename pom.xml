@@ -6,7 +6,7 @@
 
     <distributionManagement>
        <repository>
-          <id>nx-releases</id>
+          <id>maven-releases</id>
           <name>Releases</name>
           <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-central/</url>
        </repository>
