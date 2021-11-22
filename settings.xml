@@ -2,13 +2,13 @@
   <servers>
       <server>
           <id>nx-releases</id>
-          <username>admin</username>
-          <password>NexusCoeSysmap!#</password>
+          <username>teste</username>
+          <password>teste</password>
       </server>
       <server>
           <id>nx-snapshots</id>
-          <username>admin</username>
-          <password>NexusCoeSysmap!#</password>
+          <username>teste</username>
+          <password>teste</password>
       </server>
   </servers>
 </settings>
