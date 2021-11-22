@@ -8,12 +8,12 @@
        <repository>
           <id>nx-releases</id>
           <name>Releases</name>
-          <url>https://nexus.nexus.svc.cluster.local:8081/repository/maven-releases/</url>
+          <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-releases/</url>
        </repository>
        <snapshotRepository>
           <id>nx-snapshots</id>
           <name>Snapshot</name>
-          <url>https://nexus.nexus.svc.cluster.local:8081/repository/maven-snapshots/</url>
+          <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-snapshots/</url>
        </snapshotRepository>
     </distributionManagement>
         <modelVersion>4.0.0</modelVersion>
