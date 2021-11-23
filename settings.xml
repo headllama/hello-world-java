@@ -6,19 +6,18 @@
           <password>teste</password>
       </server>
   </servers>
+<!--
   <mirrors>
     <mirror>
-      <!--This sends everything else to /public -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
       <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-public1/</url>
     </mirror>
   </mirrors>
+-->
   <profiles>
     <profile>
       <id>nexus</id>
-      <!--Enable snapshots for the built in central repo to direct -->
-      <!--all requests to nexus via the mirror -->
       <repositories>
         <repository>
           <id>central</id>
