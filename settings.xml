@@ -1,4 +1,12 @@
 <settings>
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-releases/</url>
+    </mirror>
+  </mirrors>
   <servers>
       <server>
           <id>maven-releases</id>
