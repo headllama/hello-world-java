@@ -1,7 +1,7 @@
 <settings>
   <servers>
       <server>
-          <id>maven-releases</id>
+          <id>nexus</id>
           <username>teste</username>
           <password>teste</password>
       </server>
