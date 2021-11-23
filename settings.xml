@@ -2,15 +2,15 @@
   <servers>
       <server>
           <id>nexus</id>
-          <username>teste</username>
-          <password>teste</password>
+          <username>uploaduser</username>
+          <password>upload123!</password>
       </server>
   </servers>
   <mirrors>
     <mirror>
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-public1/</url>
+      <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-public/</url>
     </mirror>
   </mirrors>
   <profiles>
