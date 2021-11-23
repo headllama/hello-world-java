@@ -6,7 +6,6 @@
           <password>teste</password>
       </server>
   </servers>
-<!--
   <mirrors>
     <mirror>
       <id>nexus</id>
@@ -14,7 +13,6 @@
       <url>http://nexus.nexus.svc.cluster.local:8081/repository/maven-public1/</url>
     </mirror>
   </mirrors>
--->
   <profiles>
     <profile>
       <id>nexus</id>
