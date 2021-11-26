@@ -1,11 +1,44 @@
-podTemplate(yaml: readFile('./pipeline.yaml')) 
+podTemplate(yaml: '''
+      apiVersion: v1
+      kind: Pod
+      spec:
+        containers:
+        - name: maven
+          image: maven:3.8.3-openjdk-11-slim
+          command:
+          - sleep
+          args:
+          - 99d
+        - name: kaniko
+          image: gcr.io/kaniko-project/executor:v1.6.0-debug
+          imagePullPolicy: Always
+          command:
+          - sleep
+          args:
+          - 99d
+          volumeMounts:
+            - name: jenkins-docker-cfg
+              mountPath: /kaniko/.docker
+        volumes:
+        - name: jenkins-docker-cfg
+          projected:
+            sources:
+            - secret:
+                name: regcred
+                items:
+                  - key: .dockerconfigjson
+                    path: config.json
+''')
+
 {
+
   node(POD_LABEL) {
     withCredentials([file(credentialsId: 'maven_settings', variable: 'MVN_SET')]) {
 
-    stage('Checkout sources') {
+     stage('Checkout sources') {
         checkout scm // Checks out the repo where the Jenkinsfile is located
     }
+       
       stage('Maven') {
         container('maven') {
           sh 'echo "******inside maven******"'
