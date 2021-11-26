@@ -1,3 +1,5 @@
+git branch: 'main', credentialsId: 'github-w', url: 'https://github.com/headllama/hello-world-java.git'
+
 podTemplate(yaml: readFile('pipeline.yaml')) 
 {
   node(POD_LABEL) {
