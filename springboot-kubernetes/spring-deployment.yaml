@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: walber7/spring-boot-hello:166
+          image: walber7/spring-boot-hello:latest
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
