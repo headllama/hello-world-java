@@ -2,7 +2,6 @@ podTemplate(yaml: readTrusted('pipeline.yaml'))
 {
   node(POD_LABEL) {
     withCredentials([file(credentialsId: 'maven_settings', variable: 'MVN_SET')]) {
-/*
       stage('Maven') {
         container('maven') {
           sh 'echo "******inside maven******"'
@@ -33,7 +32,6 @@ podTemplate(yaml: readTrusted('pipeline.yaml'))
           }
         }
       }
-*/     
       stage('Git') {
         withCredentials([gitUsernamePassword(credentialsId: 'github-w', gitToolName: 'git-tool')]) {
         /*  sh '''
