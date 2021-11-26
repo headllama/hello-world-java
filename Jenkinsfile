@@ -35,6 +35,10 @@ podTemplate(yaml: '''
   node(POD_LABEL) {
     withCredentials([file(credentialsId: 'maven_settings', variable: 'MVN_SET')]) {
 
+     stage('Checkout sources') {
+        checkout scm // Checks out the repo where the Jenkinsfile is located
+    }
+       
       stage('Maven') {
         container('maven') {
           sh 'echo "******inside maven******"'
