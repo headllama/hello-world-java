@@ -1,4 +1,4 @@
-podTemplate(yaml: readTrusted('pipeline.yaml')) 
+podTemplate(yaml: readFile('pipeline.yaml')) 
 {
   node(POD_LABEL) {
     withCredentials([file(credentialsId: 'maven_settings', variable: 'MVN_SET')]) {
